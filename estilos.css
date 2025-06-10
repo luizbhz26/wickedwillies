@@ -1,0 +1,70 @@
+body {
+  --bege: #e6e0d6;
+  --marrom-escuro: #816d4f;
+  --marrom-claro: #b29463;
+  --marrom-amadeirado: #3e2f23;
+  --tropical-green: #556b2f;
+  --ocean-blue: #2e8b57;
+  --preto: #000;
+  --branco: #fff;
+  --green: #4fa46b;
+  font-family: "Aloha", sans-serif;
+  background-color: var(--);
+}
+
+.bg-bege {
+  --bs-bg-opacity: 1;
+  background-color: var(--bege) !important;
+}
+
+input[type="checkbox"] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banner-1 {
+  background-image: url(./assets/banner-1.png);
+}
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+  --bs-bg-opacity: 0.2;
+}
+
+.banner-2 {
+  background-image: url(./assets/banner-2.png);
+}
+
+.banner-3 {
+  background-image: url(./assets/banner-3.png);
+}
+
+.botao-padrao {
+  background-color: var(--green);
+  color: var(--branco);
+}
+.botao-padrao:hover {
+  background-color: var(--tropical-green);
+  transition: background-color 0.3s ease;
+}
+.top-bar-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1055;
+}

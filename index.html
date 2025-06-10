@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <title>Wicked Willie's Sports Bar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/aloha" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recoleta&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header style="background-color: var(--bege)">
+      <!-- Navbar -->
+      <nav class="navbar-expand-lg navbar bg-bege">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/logo.png" alt="Logo Wicked Willie's Sports Bar"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img
+                  src="./assets/logo-mobile.png"
+                  alt="Logo Wicked Willie's Sports Bar"
+                />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                  <div class="form-check form-switch"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- 1 Banner -->
+      <section
+        class="banner-1 banners d-flex flex-column justify-content-center text-center text-wrap"
+      >
+        <div class="banners-titulo bg-body-secondary py-5">
+          <h1 class="fw-bold fs-1" style="color: white">
+            Wicked Willie's Sports Bar
+          </h1>
+          <p class="fs-3 py-1" style="color: white">
+            Wicked Willie's Sports Bar is the place to be for sports fans and
+            Catch Every Game. Savor Every Bite. Only at Wicked Willie’s.
+          </p>
+        </div>
+      </section>
+
+      <!--Cards-->
+      <section class="py-5 bg-bege">
+        <h2 class="text-center fw-bold pb-1">
+          Why people love Wicked Willie's
+        </h2>
+
+        <div class="container d-flex justify-content-around flex-wrap">
+          <div class="card m-4" style="width: 20rem">
+            <img
+              src="./assets/cafe-card.png"
+              class="card-img-top"
+              alt="Balcão de padaria tradicional com alimentos diversos"
+            />
+            <div class="card-body">
+              <h5 class="card-title py-2 fw-bold">Wicked Food</h5>
+              <p class="card-text">
+                At Wicked Willie’s, we don’t just serve food—we serve
+                flavor-packed experiences. Our menu is stacked with
+                crowd-pleasers and chef-driven takes on bar favorites
+              </p>
+              <a
+                href="#"
+                class="btn botao-padrao w-100 fw-bold"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#canvas-1"
+                aria-controls="offcanvasRight"
+                >More Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem">
+            <img
+              src="./assets/buffet-card.png"
+              class="card-img-top"
+              alt="Mesa de buffet com alimentos diversos"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Drinks</h5>
+              <p class="card-text">
+                Our tiki bar serves island-inspired cocktails bursting with
+                tropical flavor from rum-filled classics like the Mai Tai and
+                Zombie to creative signature drinks garnished with fresh fruit,
+                herbs, and colorful umbrellas.
+              </p>
+              <a
+                href="#"
+                class="btn botao-padrao w-100 fw-bold"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#canvas-2"
+                aria-controls="offcanvasRight"
+                >More Details</a
+              >
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem">
+            <img
+              src="./assets/delivery-card.png"
+              class="card-img-top"
+              alt="Caixa aberta armazenando comidas diversas"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Delivery</h5>
+              <p class="card-text">
+                Craving island vibes at home? We deliver our tropical cocktails
+                and delicious food straight to your door — bringing the tiki bar
+                experience wherever you are!
+              </p>
+              <a
+                href="#"
+                class="btn botao-padrao w-100 fw-bold"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#canvas-3"
+                aria-controls="offcanvasRight"
+                >More Details</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 2 Banner -->
+      <section
+        class="banner-2 banners d-flex flex-column justify-content-center text-center text-wrap"
+      >
+        <div class="banners-titulo bg-body-secondary py-5">
+          <h2 class="fw-bold fs-1" style="color: white">
+            A tropical escape with exotic cocktails, bamboo décor, and a vibrant
+            island vibe. Experience the spirit of the South Pacific in every
+            sip.
+          </h2>
+        </div>
+      </section>
+      <!-- 2 Cards -->
+      <section class="py-5 bg-bege">
+        <h2 class="fw-bold text-center pb-1">ALOHA !</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <div class="card border-0 btn bg-bege" style="width: 18rem">
+            <img
+              src="/assets/produtos-cafe-tradicional.png"
+              class="card-img-top"
+              alt="cafe preto tradicional"
+            />
+            <div class="card-body card-text">
+              <h3 class="py-2 text-center fw-bold">Mai Tai</h3>
+            </div>
+          </div>
+          <div class="card border-0 btn bg-bege" style="width: 18rem">
+            <img
+              src="/assets/produtos-cafe-tradicional2.png"
+              class="card-img-top"
+              alt="cafe preto tradicional"
+            />
+            <div class="card-body card-text">
+              <h3 class="py-2 text-center fw-bold">Zombie</h3>
+            </div>
+          </div>
+          <div class="card border-0 btn bg-bege" style="width: 18rem">
+            <img
+              src="/assets/produtos-cafe-tradicional3.png"
+              class="card-img-top"
+              alt="cafe preto tradicional"
+            />
+            <div class="card-body card-text">
+              <h3 class="py-2 text-center fw-bold">PainKiller</h3>
+            </div>
+          </div>
+          <div class="card border-0 btn bg-bege" style="width: 18rem">
+            <img
+              src="/assets/produtos-cafe-tradicional4.png"
+              class="card-img-top"
+              alt="cafe preto tradicional"
+            />
+            <div class="card-body card-text">
+              <h3 class="py-2 text-center fw-bold">Navy Grog</h3>
+            </div>
+          </div>
+          <div class="card border-0 btn bg-bege" style="width: 18rem">
+            <img
+              src="/assets/produtos-cafe-tradicional5.png"
+              class="card-img-top"
+              alt="cafe preto tradicional"
+            />
+            <div class="card-body card-text">
+              <h3 class="py-2 text-center fw-bold">Blue Hawaiian</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3 Banner -->
+      <section class="banners banner-3"></section>
+    </main>
+    <!--Canvas 1-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="canvas-1"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          Café & Bistrô Serenatto
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button botao-padrao collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Café
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Temos um excelente espaço para alimentação e descanso, com a
+                vitrine recheada de doces e salgados tradicionais.
+                <strong>
+                  Venha conhecer nossa loja e desfrutar de todas as delícias do
+                  Serenatto Café & Bistrô.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed botao-padrao"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Bistrô
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Além de cafés o dia todo,</strong> oferecemos refeições
+                em horário de almoço com pratos deliciosos no bistrô.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed botao-padrao"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Coworking
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Temos o espaço adequado</strong> para trabalho, com
+                conexão à internet de alta velocidade e instalções confortáveis
+                para reuniões.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Canvas 2-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="canvas-2"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Buffet</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button botao-padrao collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Eventos
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Organizamos buffet com cardápios variados e personalizados para
+                casamentos, festas de aniversário, batizados e outros eventos!
+                <strong>
+                  Venha conhecer nossa loja e desfrutar de todas as delícias do
+                  Serenatto Café & Bistrô.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed botao-padrao"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Catering
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Oferecemos serviços de Catering para</strong> coffee
+                breaks, eventos e produções etc. Faça agora seu orçamento
+                gratuito e não fique de fora dessa novidade!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Canvas 3-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="canvas-3"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Delivery</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button botao-padrao collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Encomendas para Eventos
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Produzimos e entregamos os itens de nosso cardápio em grandes
+                quantidades para seus eventos! Basta entrar em contato e fazer a
+                <strong>reserva com 72h de antecedência.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed botao-padrao"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Entrega por aplicativo
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Entregamos pelos aplicativos iFood e Rappi. Consulte nosso
+                cardápio online e faça já seu pedido.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
