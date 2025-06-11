@@ -1,9 +1,8 @@
-body {
+:root {
   --azul-escuro: #1b4145;
   --verde-apagado: #1b4145;
   --laranja-apagado: #cf652d;
   --laranja: #e4ac3c;
-
   --bege: #e6e0d6;
   --marrom-escuro: #816d4f;
   --marrom-claro: #b29463;
@@ -15,6 +14,9 @@ body {
   --green: #4fa46b;
   --laranja-escuro: #d25e00;
   --laranja-fogo: #ff8c00;
+}
+
+body {
   font-family: "Aloha", sans-serif;
 }
 
@@ -42,7 +44,6 @@ input[type="checkbox"]:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; → remova ou comente */
 }
 
 .banners-titulo {
@@ -61,12 +62,14 @@ input[type="checkbox"]:focus {
   background-color: var(--laranja-escuro);
   color: var(--branco);
   border-radius: 999px;
-  padding: 0.5rem 1rem; /* opcional: para deixar o botão mais largo */
+  padding: 0.5rem 1rem;
 }
+
 .botao-padrao:hover {
   background-color: var(--laranja-fogo);
   transition: background-color 0.5s ease;
 }
+
 .nav-link:hover {
   color: var(--laranja) !important;
 }
@@ -83,7 +86,31 @@ input[type="checkbox"]:focus {
 }
 
 .nav-link.transition:hover {
-  color: var(--laranja-escuro); /* ou qualquer cor de destaque do seu tema */
+  color: var(--laranja-escuro);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: var(--laranja-fogo);
+  transition: width 0.3s ease;
+  margin: 0 auto;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
 }
 
 @keyframes float {
@@ -105,7 +132,7 @@ input[type="checkbox"]:focus {
   height: 100vh;
   width: 100%;
   filter: brightness(0.5);
-  z-index: 1; /* opcional, pode omitir se o texto tiver z-index alto */
+  z-index: 1;
 }
 
 .carousel-caption-custom {
@@ -117,17 +144,15 @@ input[type="checkbox"]:focus {
   text-align: center;
   width: 100%;
   padding: 0 1rem;
-  z-index: 10; /* Aumente esse valor */
+  z-index: 10;
 }
 
-/* Imagem do carrossel */
 .banner-img {
   object-fit: cover;
   height: 100vh;
   width: 100%;
 }
 
-/* Overlay em gradiente (escurece parte da imagem) */
 .banner-overlay {
   position: absolute;
   inset: 0;
@@ -140,16 +165,15 @@ input[type="checkbox"]:focus {
   z-index: 5;
 }
 
-/* Texto central do banner */
 .banner-caption {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10; /* acima da overlay e das imagens */
+  z-index: 10;
+  padding: 0 1rem;
 }
 
-/* Efeito de flutuação no título */
 @keyframes floatTitle {
   0%,
   100% {
@@ -164,7 +188,17 @@ input[type="checkbox"]:focus {
   animation: floatTitle 4s ease-in-out infinite;
 }
 
-.z-1 {
+.z-index-base {
   z-index: 1;
   position: relative;
+}
+
+@media (max-width: 576px) {
+  .banner-caption h1 {
+    font-size: 2rem;
+  }
+
+  .banner-caption p {
+    font-size: 1.25rem;
+  }
 }

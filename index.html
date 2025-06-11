@@ -33,20 +33,26 @@
     />
   </head>
   <body>
+    <!-- Top bar -->
+    <div class="bg-dark text-white text-end px-4 py-1 small">
+      <i class="bi bi-geo-alt me-2"></i>Cape Cod ·
+      <i class="bi bi-clock me-2"></i>12pm – 2am ·
+      <i class="bi bi-instagram me-2"></i>
+      <i class="bi bi-facebook"></i>
+    </div>
     <!-- Header -->
-    <header class="bg-bege shadow-sm">
+    <header class="bg-header shadow-sm">
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-bege py-3">
+      <nav class="navbar navbar-expand-lg py-3">
         <div class="container-fluid px-4">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand px-2" href="#">
             <img
               src="./assets/logo.png"
               alt="Logo Wicked Willie's Sports Bar"
-              height="48"
+              height="52"
             />
           </a>
 
-          <!-- Botão hamburguer (mobile) -->
           <button
             class="navbar-toggler border-0"
             type="button"
@@ -58,7 +64,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Menu mobile (offcanvas) -->
+          <!-- Menu mobile -->
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -80,47 +86,50 @@
                 aria-label="Close"
               ></button>
             </div>
-
             <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto text-center text-lg-start">
+              <ul class="navbar-nav ms-auto text-center text-lg-start gap-3">
                 <li class="nav-item">
                   <a
-                    class="nav-link fw-bold text-dark transition"
+                    class="nav-link fw-bold text-black transition"
                     href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold text-dark transition" href="#"
+                  <a class="nav-link fw-bold text-black transition" href="#"
                     >Menu</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold text-dark transition" href="#"
+                  <a class="nav-link fw-bold text-black transition" href="#"
                     >Photo Gallery</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold text-dark transition" href="#"
+                  <a class="nav-link fw-bold text-black transition" href="#"
                     >Private Events</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold text-dark transition" href="#"
+                  <a class="nav-link fw-bold text-black transition" href="#"
                     >About Us</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold text-dark transition" href="#"
+                  <a class="nav-link fw-bold text-black transition" href="#"
                     >Contact Us</a
                   >
                 </li>
               </ul>
+              <a href="#" class="btn botao-padrao ms-lg-4 mt-3 mt-lg-0"
+                >Book a Table</a
+              >
             </div>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
       <!-- 1 Banner com carrossel + overlay + texto flutuante -->
       <section class="banner-carousel position-relative">
@@ -400,105 +409,106 @@
         </div>
       </section>
 
-      <footer class="bg-dark text-white pt-5 pb-4 mt-5">
-        <div class="container text-center text-md-start">
-          <div class="row">
-            <!-- Logo e descrição -->
-            <div class="col-md-4 mb-4">
-              <img
-                src="./assets/logo.png"
-                alt="Logo Wicked Willie's"
-                style="height: 60px"
-                class="mb-3"
-              />
-              <p class="text-white-50">
-                A tropical escape in the heart of the city — savor every bite,
-                sip every vibe.
-              </p>
-            </div>
+      <!-- Footer -->
+      <section>
+        <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+          <div class="container text-center text-md-start">
+            <div class="row">
+              <!-- Logo e descrição -->
+              <div class="col-md-4 mb-4">
+                <img
+                  src="./assets/logo.png"
+                  alt="Logo Wicked Willie's"
+                  style="height: 60px"
+                  class="mb-3"
+                />
+                <p class="text-white-50">
+                  A tropical escape in the heart of the city — savor every bite,
+                  sip every vibe.
+                </p>
+              </div>
 
-            <!-- Navegação -->
-            <div class="col-md-4 mb-4">
-              <h5
-                class="text-uppercase fw-bold mb-3"
-                style="font-family: 'Aloha', cursive"
-              >
-                Explore
-              </h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="index.html"
-                    class="text-white-50 text-decoration-none"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white-50 text-decoration-none"
-                    >Menu</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white-50 text-decoration-none"
-                    >Private Events</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white-50 text-decoration-none"
-                    >Photo Gallery</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white-50 text-decoration-none"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
+              <!-- Navegação -->
+              <div class="col-md-4 mb-4">
+                <h5
+                  class="text-uppercase fw-bold mb-3"
+                  style="font-family: 'Aloha', cursive"
+                >
+                  Explore
+                </h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="text-white-50 text-decoration-none"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white-50 text-decoration-none"
+                      >Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white-50 text-decoration-none"
+                      >Private Events</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white-50 text-decoration-none"
+                      >Photo Gallery</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-white-50 text-decoration-none"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
-            <!-- Contato / Social -->
-            <div class="col-md-4 mb-4">
-              <h5
-                class="text-uppercase fw-bold mb-3"
-                style="font-family: 'Aloha', cursive"
-              >
-                Get in Touch
-              </h5>
-              <p class="text-white-50 mb-1">
-                <i class="bi bi-geo-alt-fill me-2"></i>123 Tropical Ave, Cape
-                Cod
-              </p>
-              <p class="text-white-50 mb-1">
-                <i class="bi bi-telephone-fill me-2"></i>(555) 123-4567
-              </p>
-              <p class="text-white-50">
-                <i class="bi bi-envelope-fill me-2"></i>info@wickedwillies.com
-              </p>
-              <div class="mt-3">
-                <a href="#" class="text-white-50 me-3"
-                  ><i class="bi bi-instagram fs-4"></i
-                ></a>
-                <a href="#" class="text-white-50 me-3"
-                  ><i class="bi bi-facebook fs-4"></i
-                ></a>
-                <a href="#" class="text-white-50"
-                  ><i class="bi bi-whatsapp fs-4"></i
-                ></a>
+              <!-- Contato / Social -->
+              <div class="col-md-4 mb-4">
+                <h5
+                  class="text-uppercase fw-bold mb-3"
+                  style="font-family: 'Aloha', cursive"
+                >
+                  Get in Touch
+                </h5>
+                <p class="text-white-50 mb-1">
+                  <i class="bi bi-geo-alt-fill me-2"></i>123 Tropical Ave, Cape
+                  Cod
+                </p>
+                <p class="text-white-50 mb-1">
+                  <i class="bi bi-telephone-fill me-2"></i>(555) 123-4567
+                </p>
+                <p class="text-white-50">
+                  <i class="bi bi-envelope-fill me-2"></i>info@wickedwillies.com
+                </p>
+                <div class="mt-3">
+                  <a href="#" class="text-white-50 me-3"
+                    ><i class="bi bi-instagram fs-4"></i
+                  ></a>
+                  <a href="#" class="text-white-50 me-3"
+                    ><i class="bi bi-facebook fs-4"></i
+                  ></a>
+                  <a href="#" class="text-white-50"
+                    ><i class="bi bi-whatsapp fs-4"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Linha inferior -->
-          <hr class="border-white-50" />
-          <div class="text-center">
-            <small class="text-white-50">
-              &copy; 2025 Wicked Willie's Sports Bar. All rights reserved.
-            </small>
+            <!-- Linha inferior -->
+            <hr class="border-white-50" />
+            <div class="text-center">
+              <small class="text-white-50">
+                &copy; 2025 Wicked Willie's Sports Bar. All rights reserved.
+              </small>
+            </div>
           </div>
-        </div>
-      </footer>
-      <!-- 3 Banner -->
-      <section class="banners banner-3"></section>
+        </footer>
+      </section>
     </main>
     <!--Canvas 1-->
     <div
