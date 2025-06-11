@@ -122,33 +122,69 @@
       </nav>
     </header>
     <main>
-      <!-- 1 Banner -->
-      <section
-        class="banner-1 banners d-flex flex-column justify-content-center text-center text-wrap"
-      >
-        <div class="banners-titulo bg-body-secondary py-5">
+      <!-- 1 Banner com carrossel + overlay + texto flutuante -->
+      <section class="banner-carousel position-relative">
+        <!-- Carrossel -->
+        <div
+          id="bannerCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/banner-1.png"
+                class="banner-img"
+                alt="Banner 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/banner-2.png"
+                class="banner-img"
+                alt="Banner 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/banner-3.png"
+                class="banner-img"
+                alt="Banner 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Overlay em gradiente -->
+        <div class="banner-overlay"></div>
+
+        <!-- Texto sobreposto -->
+        <div class="banner-caption text-center text-white w-100 px-3">
           <h1
-            class="fw-bold fs-1 text-white mt-2"
+            class="fw-bold fs-1 float-text"
             style="font-family: 'Aloha', cursive"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             Wicked Willie's Sports Bar
           </h1>
+
           <img
             src="./assets/divisor-tiki.png"
             alt="divider"
-            style="width: 400px"
-            class="mx-auto my-1"
+            style="width: 300px"
+            class="mx-auto my-2"
           />
+
           <p
-            class="fw-bold fs-2 text-white mt-2"
+            class="fw-bold fs-2 mt-2"
             style="font-family: 'Aloha', cursive"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            The place to be for sports fans and Catch Every Game. Savor Every
-            Bite. Only at Wicked Willie’s.
+            The place to be for sports fans and Catch Every Game. <br />
+            Savor Every Bite. Only at Wicked Willie’s.
           </p>
         </div>
       </section>
