@@ -1,4 +1,9 @@
 body {
+  --azul-escuro: #1b4145;
+  --verde-apagado: #1b4145;
+  --laranja-apagado: #cf652d;
+  --laranja: #e4ac3c;
+
   --bege: #e6e0d6;
   --marrom-escuro: #816d4f;
   --marrom-claro: #b29463;
@@ -8,6 +13,8 @@ body {
   --preto: #000;
   --branco: #fff;
   --green: #4fa46b;
+  --laranja-escuro: #d25e00;
+  --laranja-fogo: #ff8c00;
   font-family: "Aloha", sans-serif;
   background-color: var(--);
 }
@@ -24,8 +31,8 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked,
 input[type="checkbox"]:focus {
-  background-color: var(--marrom-claro);
-  border-color: var(--marrom-claro);
+  background-color: var(--laranja-escuro);
+  border-color: var(--laranja-fogo);
   box-shadow: none;
   outline: none;
 }
@@ -55,16 +62,44 @@ input[type="checkbox"]:focus {
 }
 
 .botao-padrao {
-  background-color: var(--green);
+  background-color: var(--laranja-escuro);
   color: var(--branco);
+  border-radius: 999px;
+  padding: 0.5rem 1rem; /* opcional: para deixar o botão mais largo */
 }
 .botao-padrao:hover {
-  background-color: var(--tropical-green);
-  transition: background-color 0.3s ease;
+  background-color: var(--laranja-fogo);
+  transition: background-color 0.5s ease;
 }
+.nav-link:hover {
+  color: var(--laranja) !important;
+}
+
 .top-bar-wrapper {
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1055;
+}
+
+.nav-link.transition {
+  transition: color 0.3s ease;
+}
+
+.nav-link.transition:hover {
+  color: var(--laranja-escuro); /* ou qualquer cor de destaque do seu tema */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.banners-titulo h1 {
+  animation: float 4s ease-in-out infinite;
 }

@@ -27,18 +27,28 @@
       href="https://fonts.googleapis.com/css2?family=Recoleta&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
-    <header style="background-color: var(--bege)">
+    <header class="bg-bege shadow-sm">
       <!-- Navbar -->
-      <nav class="navbar-expand-lg navbar bg-bege">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="./assets/logo.png" alt="Logo Wicked Willie's Sports Bar"
-          /></a>
+      <nav class="navbar navbar-expand-lg bg-bege py-3">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/logo.png"
+              alt="Logo Wicked Willie's Sports Bar"
+              height="48"
+            />
+          </a>
+
+          <!-- Botão hamburguer (mobile) -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -47,6 +57,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Menu mobile (offcanvas) -->
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -58,37 +70,50 @@
                 <img
                   src="./assets/logo-mobile.png"
                   alt="Logo Wicked Willie's Sports Bar"
+                  height="40"
                 />
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close text-reset"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
+
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav ms-auto text-center text-lg-start">
                 <li class="nav-item">
                   <a
-                    class="nav-link active"
-                    aria-current="page"
+                    class="nav-link fw-bold text-dark transition"
                     href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Menu</a>
+                  <a class="nav-link fw-bold text-dark transition" href="#"
+                    >Menu</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link fw-bold text-dark transition" href="#"
+                    >Photo Gallery</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link fw-bold text-dark transition" href="#"
+                    >Private Events</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"></a>
-                  <div class="form-check form-switch"></div>
+                  <a class="nav-link fw-bold text-dark transition" href="#"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold text-dark transition" href="#"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </div>
@@ -102,12 +127,28 @@
         class="banner-1 banners d-flex flex-column justify-content-center text-center text-wrap"
       >
         <div class="banners-titulo bg-body-secondary py-5">
-          <h1 class="fw-bold fs-1" style="color: white">
+          <h1
+            class="fw-bold fs-1 text-white mt-2"
+            style="font-family: 'Aloha', cursive"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Wicked Willie's Sports Bar
           </h1>
-          <p class="fs-3 py-1" style="color: white">
-            Wicked Willie's Sports Bar is the place to be for sports fans and
-            Catch Every Game. Savor Every Bite. Only at Wicked Willie’s.
+          <img
+            src="./assets/divisor-tiki.png"
+            alt="divider"
+            style="width: 400px"
+            class="mx-auto my-1"
+          />
+          <p
+            class="fw-bold fs-2 text-white mt-2"
+            style="font-family: 'Aloha', cursive"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            The place to be for sports fans and Catch Every Game. Savor Every
+            Bite. Only at Wicked Willie’s.
           </p>
         </div>
       </section>
@@ -119,7 +160,12 @@
         </h2>
 
         <div class="container d-flex justify-content-around flex-wrap">
-          <div class="card m-4" style="width: 20rem">
+          <div
+            class="card m-4"
+            style="width: 20rem"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
             <img
               src="./assets/cafe-card.png"
               class="card-img-top"
@@ -138,12 +184,17 @@
                 data-bs-toggle="offcanvas"
                 data-bs-target="#canvas-1"
                 aria-controls="offcanvasRight"
-                >More Details</a
+                >See Our Menu</a
               >
             </div>
           </div>
 
-          <div class="card m-4" style="width: 20rem">
+          <div
+            class="card m-4"
+            style="width: 20rem"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             <img
               src="./assets/buffet-card.png"
               class="card-img-top"
@@ -168,7 +219,12 @@
             </div>
           </div>
 
-          <div class="card m-4" style="width: 20rem">
+          <div
+            class="card m-4"
+            style="width: 20rem"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="./assets/delivery-card.png"
               class="card-img-top"
@@ -206,10 +262,22 @@
         </div>
       </section>
       <!-- 2 Cards -->
+      <!-- 2 Cards -->
       <section class="py-5 bg-bege">
-        <h2 class="fw-bold text-center pb-1">ALOHA !</h2>
+        <h2
+          class="fw-bold text-center pb-1"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
+          ALOHA !
+        </h2>
         <div class="d-flex flex-wrap justify-content-center gap-4">
-          <div class="card border-0 btn bg-bege" style="width: 18rem">
+          <div
+            class="card border-0 btn bg-bege"
+            style="width: 18rem"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
             <img
               src="/assets/produtos-cafe-tradicional.png"
               class="card-img-top"
@@ -219,7 +287,13 @@
               <h3 class="py-2 text-center fw-bold">Mai Tai</h3>
             </div>
           </div>
-          <div class="card border-0 btn bg-bege" style="width: 18rem">
+
+          <div
+            class="card border-0 btn bg-bege"
+            style="width: 18rem"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="/assets/produtos-cafe-tradicional2.png"
               class="card-img-top"
@@ -229,7 +303,13 @@
               <h3 class="py-2 text-center fw-bold">Zombie</h3>
             </div>
           </div>
-          <div class="card border-0 btn bg-bege" style="width: 18rem">
+
+          <div
+            class="card border-0 btn bg-bege"
+            style="width: 18rem"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               src="/assets/produtos-cafe-tradicional3.png"
               class="card-img-top"
@@ -239,7 +319,13 @@
               <h3 class="py-2 text-center fw-bold">PainKiller</h3>
             </div>
           </div>
-          <div class="card border-0 btn bg-bege" style="width: 18rem">
+
+          <div
+            class="card border-0 btn bg-bege"
+            style="width: 18rem"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="/assets/produtos-cafe-tradicional4.png"
               class="card-img-top"
@@ -249,7 +335,13 @@
               <h3 class="py-2 text-center fw-bold">Navy Grog</h3>
             </div>
           </div>
-          <div class="card border-0 btn bg-bege" style="width: 18rem">
+
+          <div
+            class="card border-0 btn bg-bege"
+            style="width: 18rem"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <img
               src="/assets/produtos-cafe-tradicional5.png"
               class="card-img-top"
@@ -261,6 +353,104 @@
           </div>
         </div>
       </section>
+
+      <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+          <div class="row">
+            <!-- Logo e descrição -->
+            <div class="col-md-4 mb-4">
+              <img
+                src="./assets/logo.png"
+                alt="Logo Wicked Willie's"
+                style="height: 60px"
+                class="mb-3"
+              />
+              <p class="text-white-50">
+                A tropical escape in the heart of the city — savor every bite,
+                sip every vibe.
+              </p>
+            </div>
+
+            <!-- Navegação -->
+            <div class="col-md-4 mb-4">
+              <h5
+                class="text-uppercase fw-bold mb-3"
+                style="font-family: 'Aloha', cursive"
+              >
+                Explore
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-white-50 text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    >Private Events</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    >Photo Gallery</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contato / Social -->
+            <div class="col-md-4 mb-4">
+              <h5
+                class="text-uppercase fw-bold mb-3"
+                style="font-family: 'Aloha', cursive"
+              >
+                Get in Touch
+              </h5>
+              <p class="text-white-50 mb-1">
+                <i class="bi bi-geo-alt-fill me-2"></i>123 Tropical Ave, Cape
+                Cod
+              </p>
+              <p class="text-white-50 mb-1">
+                <i class="bi bi-telephone-fill me-2"></i>(555) 123-4567
+              </p>
+              <p class="text-white-50">
+                <i class="bi bi-envelope-fill me-2"></i>info@wickedwillies.com
+              </p>
+              <div class="mt-3">
+                <a href="#" class="text-white-50 me-3"
+                  ><i class="bi bi-instagram fs-4"></i
+                ></a>
+                <a href="#" class="text-white-50 me-3"
+                  ><i class="bi bi-facebook fs-4"></i
+                ></a>
+                <a href="#" class="text-white-50"
+                  ><i class="bi bi-whatsapp fs-4"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Linha inferior -->
+          <hr class="border-white-50" />
+          <div class="text-center">
+            <small class="text-white-50">
+              &copy; 2025 Wicked Willie's Sports Bar. All rights reserved.
+            </small>
+          </div>
+        </div>
+      </footer>
       <!-- 3 Banner -->
       <section class="banners banner-3"></section>
     </main>
@@ -273,7 +463,7 @@
     >
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasRightLabel">
-          Café & Bistrô Serenatto
+          Wicked Willie's Sports Bar
         </h5>
         <button
           type="button"
@@ -514,5 +704,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
