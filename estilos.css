@@ -202,3 +202,10 @@ input[type="checkbox"]:focus {
     font-size: 1.25rem;
   }
 }
+
+/* Glassmorphism header */
+.bg-header {
+  background: rgba(27, 65, 69, 0.85); /* fundo com transparência */
+  backdrop-filter: blur(6px); /* efeito glassmorphism */
+  -webkit-backdrop-filter: blur(6px);
+}
